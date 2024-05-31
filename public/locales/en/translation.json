@@ -1,0 +1,9 @@
+{ 
+  "Navbar": {
+    "home": "Home",
+    "prices": "Prices",
+    "sales": "Sales Call",
+    "trackYourShip": "Track Your Order",   
+    "login": "Login"  
+  }
+}
