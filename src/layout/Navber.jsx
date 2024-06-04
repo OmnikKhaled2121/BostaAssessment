@@ -47,7 +47,6 @@ export default function Navber() {
           background: "white",
           justifyContent: "space-between",
         }}
-        disableGutters={true}
       >
         <Grid
           item
@@ -96,7 +95,11 @@ export default function Navber() {
           </NavTitle>
         </Grid>
 
-        <Grid item xs={1} sx={{ display: "flex", justifyContent: "end",alignItems:"center" }}>
+        <Grid
+          item
+          xs={1}
+          sx={{ display: "flex", justifyContent: "end", alignItems: "center" }}
+        >
           <Link to={"/"}>
             {theme.direction == "ltr" ? (
               <>
@@ -207,13 +210,12 @@ export default function Navber() {
             direction: "rtl",
           }}
         >
-        
           <Grid
             item
             container
             xs={3}
             sx={{ display: "flex", justifyContent: "space-between" }}
-          >           
+          >
             <Grid
               item
               xs={6}
@@ -230,7 +232,7 @@ export default function Navber() {
               >
                 <path
                   fill="black"
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"
                 />
               </svg>
@@ -338,6 +340,12 @@ function MobileNav({ handleNavToggle, currentPage, NavTitles }) {
       </NavTitle>
       <NavTitle to={"/"} active={currentPage == ""}>
         {NavTitles.home}
+      </NavTitle>
+      <NavTitle>
+        <Switcher xs={6} />
+      </NavTitle>
+      <NavTitle>
+        <TrackYourShip />
       </NavTitle>
       {/* <Switcher xs={6} />  */}
     </Grid>

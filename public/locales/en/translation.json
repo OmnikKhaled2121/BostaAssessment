@@ -1,9 +1,46 @@
-{ 
+{
   "Navbar": {
     "home": "Home",
     "prices": "Prices",
     "sales": "Sales Call",
-    "trackYourShip": "Track Your Order",   
-    "login": "Login"  
-  }
+    "trackYourShip": "Track Your Order",
+    "login": "Login"
+  },
+  "shipmentDetails": {
+    "shipmentDetails": "Shipment Details",
+    "deliveryAddress": "Delivery Address",
+    "tableHeaders": {
+      "branch": "Branch",
+      "date": "Date",
+      "time": "Time",
+      "details": "Details"
+    },
+    "tableEvents": {
+      "TICKET_CREATED": "Shipment Created",
+      "NOT_YET_SHIPPED": "Not Yet Shipped",
+      "AVAILABLE_FOR_PICKUP": "Shipment Received from Merchant",
+      "WAITING_FOR_CUSTOMER_ACTION": "Waiting for Customer Action",
+      "CANCELLED": "Cancelled",
+      "PACKAGE_RECEIVED": "Shipment Received",
+      "IN_TRANSIT": "Shipment Out for Delivery",
+      "DELIVERY_FAILED": "Delivery Failed",
+      "OUT_FOR_DELIVERY": "Out For Delivery",
+      "DELIVERED": "Delivered",
+      "DELIVERED_TO_SENDER": "Delivered To Sender"
+    },
+    "reasons": {
+      "Uncovered Zone": "Uncovered Zone",
+      "Cancellation - The customer refuses to give the shipment to the star": "Cancellation - The customer refuses to give the shipment to the star"
+    },
+    "cardTitle": "Is there a problem with your shipment?!",
+    "cardButton": "Report an Issue",
+    "cardAddress": "Imbaba, Talaat Harb Street, El Omal City, next to El Prince, House 17, Block 22, Cairo",
+    "Bosta": "Bosta",
+    "shipmentID": "Shipment ID",
+    "lastUpdate": "Last Update",
+    "trader": "Trader Name",
+    "deliverDate": "Deliver Date"
+  },
+
+  "home": "Please enter a shipment id"
 }

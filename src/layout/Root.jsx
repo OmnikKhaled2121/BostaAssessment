@@ -1,23 +1,16 @@
 import Navber from "./Navber";
-
 import { Outlet } from "react-router-dom";
-import { Grid } from "@mui/material";
 import { useTheme } from "@emotion/react";
+import { Layout } from "antd";
 
 export default function Root() {
   const theme = useTheme();
   return (
     <>
       <Navber />
-      <Grid
-        sx={{
-          minWidth: "100vw",
-          minHeight: "100px",
-          direction: `${theme.direction}`,
-        }}
-      >
+      <Layout style={{ backgroundColor: "unset", direction: theme.direction }}>
         <Outlet />
-      </Grid>
+      </Layout>
     </>
   );
 }

@@ -1,3 +1,12 @@
 body {
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
 }
+
+.ltr .ant-table {
+  direction: ltr;
+}
+
+.rtl .ant-table {
+  direction: rtl;
+}
+

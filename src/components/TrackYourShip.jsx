@@ -1,16 +1,21 @@
-import React, { useState } from "react";
+import { useState, useContext } from "react";
 import Popover from "@mui/material/Popover";
 import TextField from "@mui/material/TextField";
 import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
 import { useTranslation } from "react-i18next";
+import { ShipmentContext } from "../context/Shipment";
+import useDebounce from "../Hooks/useDebounce";
 
 function TrackYourShip() {
   const { t } = useTranslation();
   const content = t("Navbar.trackYourShip");
   const [anchorEl, setAnchorEl] = useState(null);
   const [inputValue, setInputValue] = useState("");
-
+  const { setShipmentID } = useContext(ShipmentContext);
+  const debouncedSearch = useDebounce((val) => {
+    setShipmentID(val);
+  }, 1000);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -21,6 +26,7 @@ function TrackYourShip() {
 
   const handleChange = (event) => {
     setInputValue(event.target.value);
+    debouncedSearch(event.target.value);
   };
 
   const open = Boolean(anchorEl);
@@ -53,8 +59,7 @@ function TrackYourShip() {
           InputProps={{
             endAdornment: (
               <IconButton
-                onClick={() => {             
-               
+                onClick={() => {
                   handleClose();
                 }}
               >
@@ -66,6 +71,7 @@ function TrackYourShip() {
       </Popover>
     </div>
   );
+  
 }
 
 export default TrackYourShip;

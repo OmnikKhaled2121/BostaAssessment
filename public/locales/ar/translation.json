@@ -1,10 +1,49 @@
-{ 
+{
   "Navbar": {
     "home": "الرئيسية",
     "prices": "الاسعار",
     "sales": "كلم المبيعات",
-    "trackYourShip": "تتبع شحنتك",    
-    "login": "تسجيل الدخول"    
-  }
+    "trackYourShip": "تتبع شحنتك",
+    "login": "تسجيل الدخول"
+  },
+  "shipmentDetails": {
+    "shipmentDetails": "تفاصيل الشحنة",
+    "deliveryAddress": "عنوان التسليم",
+    "tableHeaders": {
+      "branch": "الفرع",
+      "date": "التاريخ",
+      "time": "الوقت",
+      "details": "تفاصيل"
+    },
 
+    "tableEvents": {
+      "TICKET_CREATED": "تم إنشاء الشحنة",
+      "NOT_YET_SHIPPED": "لم يتم الشحن بعد",
+      "AVAILABLE_FOR_PICKUP": "تم إستلام الشحنة من التاجر",
+      "WAITING_FOR_CUSTOMER_ACTION": "بانتظار إجراء العميل",
+      "CANCELLED": "ملغاة",
+      "PACKAGE_RECEIVED": "تم إستلام الشحنة ",
+      "IN_TRANSIT": "الشحنة خرجت للتسليم",
+      "DELIVERY_FAILED": "لم تتم عملية التسليم بنجاح",
+      "OUT_FOR_DELIVERY": "تم الخروج للتسليم",
+      "DELIVERED": "تم التوصيل",
+      "DELIVERED_TO_SENDER": "تم التوصيل المرسل"
+    },
+    "reasons": {
+      "Uncovered Zone": "منطقة خارج النطاق",
+
+      "Cancellation - The customer refuses to give the shipment to the star": "الإلغاء - العميل يرفض تسليم الشحنة للنجم"
+    },
+
+    "cardTitle": "هل يوجد مشكلة ف شحنتك؟!",
+    "cardButton": "إبلاغ عن مشكلة",
+    "cardAddress": "إمبابة، شارع طلعت حرب، مدينة العمال، بجوار البرنس، منزل 17، بلوك 22، القاهرة",
+    "Bosta": "بوسطه",
+    "shipmentID": "رقم الشحنه",
+    "lastUpdate": "اخر التحديثات",
+    "trader": "اسم التاجر ",
+    "deliverDate": " موعد التسليم خلال"
+  },
+
+  "home": "بالرجاء ادخال رقم الشحنة المراد البحث عنها"
 }

@@ -1,0 +1,17 @@
+.orderDetails {
+  color: #B4B4B8 ;
+    font-family:"cairo";
+    padding-bottom:1rem;
+    font-size:18px;
+}
+.orderValues{
+  color: black;
+  font-family: "cairo";
+  font-size: 18px;
+  font-weight: 900
+}
+.colStyling{
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}

@@ -1,12 +1,8 @@
-import { useTheme } from "@emotion/react";
-import { Box, Grid, MenuItem, Select } from "@mui/material";
 import { useContext, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { ThemeContext } from "../context/ThemeContext";
 
-export default function Switcher({ xs }) {
-  const theme = useTheme();
-
+export default function Switcher() {
   const { setThemeLang } = useContext(ThemeContext);
 
   const changeLanguage = () => {
@@ -22,7 +18,7 @@ export default function Switcher({ xs }) {
 
 
 
-  // const { i18n } = useTranslation();
+
 
   const getOppositeLanguage = () => {
     return i18n.language === "ar" ? "English" : "العربية";
@@ -30,7 +26,7 @@ export default function Switcher({ xs }) {
 
   return (
     <span
-      style={{ color: "red", cursor: "pointer" }} // Text color red and cursor pointer
+      style={{ color: "red", cursor: "pointer" }} 
       onClick={changeLanguage}
     >
       {getOppositeLanguage()}

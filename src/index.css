@@ -1,3 +1,53 @@
 body {
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
+}
+
+:where(.css-dev-only-do-not-override-j9bb5n).ant-steps
+  .ant-steps-item-tail::after {
+  height: 6px !important;
+  border-radius: 5px !important;
+  width: 118% !important;
+}
+
+:where(.css-dev-only-do-not-override-j9bb5n).ant-steps.ant-steps-label-vertical
+  .ant-steps-item-icon {
+  margin-inline-start: 60px !important;
+}
+
+:where(.css-dev-only-do-not-override-j9bb5n).ant-steps
+  .ant-steps-item-custom
+  > .ant-steps-item-container
+  > .ant-steps-item-icon
+  > .ant-steps-icon {
+  font-size: 35px !important;
+}
+
+:where(.css-dev-only-do-not-override-j9bb5n).ant-steps
+  .ant-steps-item-process
+  .ant-steps-item-icon
+  > .ant-steps-icon {
+  color: white !important;
+
+  border-radius: 5rem;
+}
+
+:where(.css-dev-only-do-not-override-j9bb5n).ant-steps.ant-steps-label-vertical
+  .ant-steps-item-content {
+  width: 182px;
+}
+
+.status-cancelled .ant-steps-item-tail::after {
+  background-color: red !important;
+}
+
+.status-delivered .ant-steps-item-tail::after {
+  background-color: green !important;
+}
+
+.status-waiting .ant-steps-item-tail::after {
+  background-color: yellow !important;
+}
+
+.status-other .ant-steps-item-tail::after {
+  background-color: blue !important;
 }

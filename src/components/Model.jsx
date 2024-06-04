@@ -1,4 +1,3 @@
-import React from "react";
 import { Dialog, DialogContent, InputAdornment, TextField } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 
